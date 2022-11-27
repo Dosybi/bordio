@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import Board from './components/Board'
+
+import Sidebar from './components/Sidebar'
+import Tools from './components/Tools'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppWrapper>
+      <Sidebar />
+      <Tools />
+      <Board />
+    </AppWrapper>
+  )
 }
 
-export default App;
+const AppWrapper = styled.main`
+  display: flex;
+  width: 100wv;
+  height: 100%;
+`
+
+export default App
