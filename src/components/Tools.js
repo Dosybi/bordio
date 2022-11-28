@@ -76,10 +76,14 @@ const ToolWrapper = styled.div`
   align-items: center;
   padding: 11px 30px 11px 10px;
   margin-right: 16px;
-  cursor: pointer;
+  cursor: ${(props) => (props.isActive ? 'auto' : 'pointer')};
   color: ${(props) => (props.isActive ? '#0094FF' : '#222222')};
   background: ${(props) => (props.isActive ? '#fff' : '')};
   border-radius: ${(props) => (props.isActive ? '0px 8px 8px 0px' : '')};
+  &:hover {
+    background: #fff;
+    border-radius: 0px 8px 8px 0px;
+  }
 `
 
 const ActiveToolLabel = styled.div`

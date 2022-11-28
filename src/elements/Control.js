@@ -51,7 +51,7 @@ const Control = ({ label, type }) => {
           <Dropdown isToggled={isToggled}>
             {dropdown.map((item) => {
               return (
-                <DropdownItem isActive={item.isActive}>
+                <DropdownItem isActive={item.isActive} key={item.label}>
                   {item.label}
                 </DropdownItem>
               )
