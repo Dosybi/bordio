@@ -92,7 +92,6 @@ const ActiveToolLabel = styled.div`
   width: 4.12px;
   height: 50px;
   left: 0px;
-  top: 0px;
   border-radius: 0px 10px 10px 0px;
 `
 
